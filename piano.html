@@ -6,58 +6,60 @@
     <title>Piano | Xinzhe Peng</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="language.js" defer></script>
 </head>
 <body>
     <div class="page">
         <!-- Header -->
         <header class="header">
-            <h1>Piano</h1>
-            <p class="subtitle"><a href="index.html">← Back to Home</a></p>
+            <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">中文</button>
+            <h1 data-i18n="piano.title">Piano</h1>
+            <p class="subtitle"><a href="index.html" data-i18n="piano.back">← Back to Home</a></p>
         </header>
 
         <!-- Teachers -->
         <section class="section">
-            <h2>Teachers</h2>
+            <h2 data-i18n="piano.teachers.title">Teachers</h2>
             <ul class="contact-list">
-                <li><strong>2023 – 2025:</strong> Professor Paul Berkowitz, UC Santa Barbara</li>
-                <li><strong>2025 – Present:</strong> Dr. Lin (DMA, University of Cincinnati)</li>
+                <li data-i18n-html="piano.teachers.paul"><strong>2023 – 2025:</strong> Professor Paul Berkowitz, UC Santa Barbara</li>
+                <li data-i18n-html="piano.teachers.lin"><strong>2025 – Present:</strong> Dr. Lin (DMA, University of Cincinnati)</li>
             </ul>
         </section>
 
         <!-- Current Repertoire -->
         <section class="section">
-            <h2>Current Repertoire</h2>
+            <h2 data-i18n="piano.current.title">Current Repertoire</h2>
             <div class="publication">
-                <p class="pub-title">Partita No. 5 in G Major</p>
+                <p class="pub-title" data-i18n="piano.current.bachTitle">Partita No. 5 in G Major</p>
                 <p class="pub-authors">Johann Sebastian Bach</p>
             </div>
             <div class="publication">
-                <p class="pub-title">Impromptu D. 935 No. 3 in B-flat Major</p>
+                <p class="pub-title" data-i18n="piano.current.schubertTitle">Impromptu D. 935 No. 3 in B-flat Major</p>
                 <p class="pub-authors">Franz Schubert</p>
             </div>
         </section>
 
         <!-- Past Repertoire -->
         <section class="section">
-            <h2>Past Repertoire (2024 – 2025)</h2>
+            <h2 data-i18n="piano.past.title">Past Repertoire (2024 – 2025)</h2>
             <div class="publication">
-                <p class="pub-title">The Well-Tempered Clavier, Book 1</p>
-                <p class="pub-authors">Johann Sebastian Bach — D Major & C-sharp Major</p>
+                <p class="pub-title" data-i18n="piano.past.wtcTitle">The Well-Tempered Clavier, Book 1</p>
+                <p class="pub-authors" data-i18n="piano.past.wtcDetails">Johann Sebastian Bach — D Major & C-sharp Major</p>
             </div>
             <div class="publication">
-                <p class="pub-title">Piano Sonata No. 12 in F Major, K. 332</p>
+                <p class="pub-title" data-i18n="piano.past.mozartTitle">Piano Sonata No. 12 in F Major, K. 332</p>
                 <p class="pub-authors">Wolfgang Amadeus Mozart</p>
             </div>
             <div class="publication">
-                <p class="pub-title">Piano Sonata No. 20 in C Minor, Hob. XVI:20</p>
+                <p class="pub-title" data-i18n="piano.past.haydnTitle">Piano Sonata No. 20 in C Minor, Hob. XVI:20</p>
                 <p class="pub-authors">Joseph Haydn</p>
             </div>
             <div class="publication">
-                <p class="pub-title">Kinderszenen, Op. 15</p>
+                <p class="pub-title" data-i18n="piano.past.schumannTitle">Kinderszenen, Op. 15</p>
                 <p class="pub-authors">Robert Schumann</p>
             </div>
             <div class="publication">
-                <p class="pub-title">Moments Musicaux, D. 780</p>
+                <p class="pub-title" data-i18n="piano.past.momentsTitle">Moments Musicaux, D. 780</p>
                 <p class="pub-authors">Franz Schubert</p>
             </div>
         </section>
