@@ -54,30 +54,6 @@ body {
     text-decoration: underline;
 }
 
-.language-toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid #d7dce3;
-    background: #fff;
-    color: #2563eb;
-    font: inherit;
-    font-size: 13px;
-    line-height: 1;
-    padding: 7px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.language-toggle:hover {
-    background: #f8fafc;
-}
-
-.language-toggle:focus-visible {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
-}
-
 /* Sections */
 .section {
     margin-bottom: 40px;
@@ -103,6 +79,7 @@ body {
 }
 
 .pub-title {
+    font-size: inherit;
     font-weight: 500;
     color: #111;
     margin-bottom: 6px;
@@ -124,6 +101,7 @@ body {
     color: #2563eb;
     text-decoration: none;
     font-size: 14px;
+    overflow-wrap: anywhere;
 }
 
 .pub-links a:hover {
@@ -138,19 +116,10 @@ body {
 }
 
 .project-highlights li {
-    position: relative;
-    padding-left: 16px;
     margin-bottom: 6px;
     color: #555;
     font-size: 14px;
     line-height: 1.6;
-}
-
-.project-highlights li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #2563eb;
 }
 
 .project-highlights li strong {
@@ -192,18 +161,6 @@ body {
     text-decoration: underline;
 }
 
-/* Footer */
-.footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-}
-
-.footer p {
-    font-size: 13px;
-    color: #888;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     .page {
@@ -212,10 +169,5 @@ body {
     
     .header h1 {
         font-size: 28px;
-    }
-
-    .language-toggle {
-        position: static;
-        margin-bottom: 16px;
     }
 }

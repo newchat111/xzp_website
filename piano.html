@@ -6,13 +6,11 @@
     <title>Piano | Xinzhe Peng</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="language.js" defer></script>
 </head>
 <body>
     <div class="page">
         <!-- Header -->
         <header class="header">
-            <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">中文</button>
             <h1 data-i18n="piano.title">Piano</h1>
             <p class="subtitle"><a href="index.html" data-i18n="piano.back">← Back to Home</a></p>
         </header>
@@ -26,7 +24,6 @@
             </ul>
         </section>
 
-        <!-- Current Repertoire -->
         <section class="section">
             <h2 data-i18n="piano.current.title">Current Repertoire</h2>
             <div class="publication">
@@ -37,14 +34,17 @@
                 <p class="pub-title" data-i18n="piano.current.schubertTitle">Impromptu D. 935 No. 3 in B-flat Major</p>
                 <p class="pub-authors">Franz Schubert</p>
             </div>
+            <div class="publication">
+                <p class="pub-title" data-i18n="piano.current.beethovenTitle">Piano Sonata, Op. 31, No. 3</p>
+                <p class="pub-authors">Ludwig van Beethoven</p>
+            </div>
         </section>
 
-        <!-- Past Repertoire -->
         <section class="section">
             <h2 data-i18n="piano.past.title">Past Repertoire (2024 – 2025)</h2>
             <div class="publication">
                 <p class="pub-title" data-i18n="piano.past.wtcTitle">The Well-Tempered Clavier, Book 1</p>
-                <p class="pub-authors" data-i18n="piano.past.wtcDetails">Johann Sebastian Bach — D Major & C-sharp Major</p>
+                <p class="pub-authors" data-i18n="piano.past.wtcDetails">Johann Sebastian Bach — D Major &amp; C-sharp Major</p>
             </div>
             <div class="publication">
                 <p class="pub-title" data-i18n="piano.past.mozartTitle">Piano Sonata No. 12 in F Major, K. 332</p>
@@ -64,10 +64,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2026 Xinzhe Peng</p>
-        </footer>
     </div>
 </body>
 </html>

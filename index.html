@@ -6,173 +6,173 @@
     <title>Xinzhe Peng</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="language.js" defer></script>
 </head>
 <body>
     <div class="page">
-        <!-- Header -->
         <header class="header">
-            <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">中文</button>
             <h1 data-i18n="home.name">Xinzhe Peng</h1>
-            <p class="subtitle" data-i18n="home.subtitle">Statistics & Data Science, UC Santa Barbara</p>
-            <div class="header-links">
-                <a href="mailto:charles2605722943@outlook.com" data-i18n="common.email">Email</a>
-                <a href="https://github.com/newchat111" target="_blank">GitHub</a>
-            </div>
         </header>
 
-        <!-- About -->
-        <section class="section">
-            <h2 data-i18n="home.about.title">About</h2>
-            <p data-i18n-html="home.about.body">
-                I'm a Statistics and Data Science graduate from <strong>UC Santa Barbara (GPA: 3.55/4.0)</strong>, 
-                currently working as a Research Assistant at Shenzhen University of Advanced Technology, 
-                focusing on clinical application of Large Language Models.
-            </p>
-        </section>
+        <main>
+            <section class="section">
+                <h2 data-i18n="home.bio.title">Bio</h2>
+                <p data-i18n="home.bio.intro">I received my bachelor’s degree in Statistics and Data Science from UC Santa Barbara in 2025. My research interests are in biomedical LLMs and interpretable machine learning in small-data regimes.</p>
+                <p data-i18n="home.bio.current">My recent work in biomedical LLMs is about automatic ratings with LLM-as-a-judge, studying the correlation between human expert ratings and LLM ratings. For interpretable machine learning, I am working on transferring the knowledge of LLMs to decision trees with self-optimization, and the manuscript is ready to be submitted.</p>
+                <p data-i18n="home.bio.future">In the future, I am planning to work on the training and the benchmarking of biomedical LLMs and also on further studying how LLMs can modify the weights of small models by transferring their prior knowledge.</p>
+            </section>
 
-        <!-- Research Interest -->
-        <section class="section">
-            <h2 data-i18n="home.researchInterest.title">Research Interest</h2>
-            <p data-i18n-html="home.researchInterest.body">
-                My current research interest: <br>
-                1. boosting classical machine learning models through LLM ICL, especially in small-sample tabular learning tasks.<br>
-                2. auto-generation of clinical notes and benchmarking
-            </p>
-        </section>
+            <section class="section">
+                <h2 data-i18n="home.personal.title">Personal Information</h2>
+                <ul class="contact-list">
+                    <li data-i18n="home.personal.education">Bachelor of Science, University of California, Santa Barbara (2022–2025)</li>
+                    <li data-i18n="home.personal.major">Statistics and Data Science · GPA 3.55/4.0</li>
+                    <li data-i18n="home.personal.languages">English (TOEFL 108) · Chinese (native)</li>
+                    <li><a href="mailto:charles2605722943@outlook.com">charles2605722943@outlook.com</a></li>
+                    <li><a href="tel:+8613715143400">+86 137 1514 3400</a></li>
+                </ul>
+            </section>
 
-        <!-- Ongoing Research -->
-        <section class="section">
-            <h2 data-i18n="home.ongoing.title">Ongoing Research</h2>
-            <p data-i18n="home.ongoing.body">
-                Guideline-Grounded LLMs for Scalable SOAP Report Generation develops and evaluates a two-stage retrieval-augmented LLM framework that generates evidence-grounded SOAP reports from structured annual physical examination data in a real-world hospital deployment.
-            </p>
-        </section>
+            <section class="section">
+                <h2 data-i18n="home.experience.title">Experience</h2>
+                <h3 class="pub-title" data-i18n="home.experience.role">Research Assistant · Shenzhen University of Advanced Technology</h3>
+                <p class="pub-venue" data-i18n="home.experience.dates">Nov 2025 – Present</p>
 
-        <!-- Publications -->
-        <section class="section">
-            <h2 data-i18n="home.publications.title">Publications</h2>
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.publications.mediqa.title">
-                    SUAT-BMI at MEDIQA EVAL 2026: An Ensemble Approach to Language Models as Judges for Automatic Rating of Medical Responses
-                </p>
-                <p class="pub-authors">
-                    <strong>Xinzhe Peng</strong>, Liyuan E, Kun Feng, Jielin Li, Yuxuan Tang, and Zhao Li
-                </p>
-                <p class="pub-venue" data-i18n="home.publications.mediqa.venue">ACL Anthology Clinical Workshop</p>
-                <div class="pub-links">
-                    <a href="https://github.com/newchat111/MEDIQA-SUATBMI-ENSEMBLE" target="_blank" data-i18n="common.code">[Code]</a>
+                <div class="publication">
+                    <h4 class="pub-title" data-i18n="home.experience.report.title">AI-Powered Medical SOAP Report Generation System</h4>
+                    <p class="pub-authors" data-i18n="home.experience.report.details">Python, FastAPI, FAISS · Deployed at Baiyun Hu Hospital, Guangzhou, China</p>
+                    <p class="pub-venue" data-i18n="home.experience.projectDates">Nov 2025 – Sep 2026</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.experience.report.point1">A production-ready clinical documentation service combining large language models with retrieval-augmented generation for evidence-based medical reporting.</li>
+                        <li data-i18n="home.experience.report.point2">Built a hybrid inference pipeline with DeepSeek V4 Flash API calls and asynchronous RAG-enhanced reporting for clinical guideline retrieval. A public server receives requests, and a private server handles compute-intensive tasks such as RAG.</li>
+                        <li data-i18n="home.experience.report.point3">Implemented a scalable job queue with robust task scheduling to ensure reliable report generation at scale.</li>
+                        <li data-i18n="home.experience.report.point4">The system serves more than 10,000 patients.</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- Projects -->
-        <section class="section">
-            <h2 data-i18n="home.projects.title">Projects</h2>
-            
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.projects.report.title">AI-Powered Medical Report Generation System</p>
-                <p class="pub-authors" data-i18n="home.projects.report.tags">Healthcare AI • Distributed Systems • LLM Application</p>
-                <p class="pub-venue" data-i18n="home.projects.report.summary">
-                    A production-ready clinical documentation service combining large language models with 
-                    retrieval-augmented generation for evidence-based medical reporting.
-                </p>
-                <ul class="project-highlights">
-                    <li data-i18n="home.projects.report.point1">Built a hybrid inference pipeline with synchronous direct LLM responses for real-time queries, paired with asynchronous RAG-enhanced reports for comprehensive clinical documentation</li>
-                    <li data-i18n="home.projects.report.point2">Implemented a scalable job queue with robust task scheduling ensuring reliable report generation at scale with failure recovery and progress tracking</li>
-                    <li data-i18n="home.projects.report.point3">Integrated RAG with medical knowledge retrieval to enrich reports with authoritative citations and clinical guideline references</li>
-                </ul>
-            </div>
+                <div class="publication">
+                    <h4 class="pub-title">VitaLLM</h4>
+                    <p class="pub-authors" data-i18n="home.experience.vitallm.details">HuggingFace</p>
+                    <p class="pub-venue" data-i18n="home.experience.projectDates">Nov 2025 – Sep 2026</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.experience.vitallm.point1">Developed a training recipe for LLMs for automated SOAP generation, including continued pretraining (CPT), data augmentation, and supervised fine-tuning (SFT).</li>
+                        <li data-i18n="home.experience.vitallm.point2">Developed an LLM-as-a-judge benchmark for automated evaluation of SOAP generation, with metrics including factual accuracy, consistency, and writing style.</li>
+                    </ul>
+                </div>
+            </section>
 
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.projects.ecg.title">ECG Signal Extraction with U-Net</p>
-                <p class="pub-authors" data-i18n="home.projects.ecg.tags">Computer Vision • Medical Imaging • Deep Learning</p>
-                <p class="pub-venue" data-i18n="home.projects.ecg.dates">Nov 2025 – Dec 2025</p>
-                <ul class="project-highlights">
-                    <li data-i18n="home.projects.ecg.point1">Preprocessed ECG images via homography transformation and geometric rectification to align coordinate systems across samples</li>
-                    <li data-i18n="home.projects.ecg.point2">Trained a U-Net model for semantic segmentation to accurately extract ECG waveform data</li>
-                    <li data-i18n="home.projects.ecg.point3">Optimized with cross-entropy loss; achieved a final SNR score of 16</li>
-                </ul>
-            </div>
+            <section class="section">
+                <h2 data-i18n="home.research.title">Research</h2>
+                <p data-i18n="home.research.interests">Research interests include biomedical LLMs, evaluation of biomedical LLMs, and small-sample machine learning.</p>
 
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.projects.parasite.title">Parasite Detection with YOLOv8n & ResNet</p>
-                <p class="pub-authors" data-i18n="home.projects.parasite.tags">Object Detection • Computer Vision • Classification</p>
-                <p class="pub-venue" data-i18n="home.projects.parasite.dates">Nov 2025 – Dec 2025</p>
-                <ul class="project-highlights">
-                    <li data-i18n="home.projects.parasite.point1">Developed and trained multiple YOLOv8n models to detect 10+ parasite species and impurities</li>
-                    <li data-i18n="home.projects.parasite.point2">Integrated a ResNet classifier to distinguish true parasites from non-parasitic impurities in the final pipeline</li>
-                    <li data-i18n="home.projects.parasite.point3">Delivered a robust detection system with a test F1-score of 0.87</li>
-                </ul>
-            </div>
-
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.projects.raman.title">Solution Concentration Prediction via Raman Spectroscopy</p>
-                <p class="pub-authors" data-i18n="home.projects.raman.tags">Signal Processing • Deep Learning • Regression</p>
-                <p class="pub-venue" data-i18n="home.projects.raman.dates">Jun 2025 – Jul 2025</p>
-                <ul class="project-highlights">
-                    <li data-i18n="home.projects.raman.point1">Preprocessed multi-wavelength Raman spectral data using linear interpolation, max normalization, and Gaussian normalization</li>
-                    <li data-i18n="home.projects.raman.point2">Built a 1D CNN incorporating pooling layers, batch normalization, and neuron dropout for regression</li>
-                    <li data-i18n="home.projects.raman.point3">Enhanced model robustness via hyperparameter tuning and L2 regularization</li>
-                    <li data-i18n="home.projects.raman.point4">Attained a consistent R² score of 0.71 across training, validation, and test sets</li>
-                </ul>
-            </div>
-
-        </section>
-
-        <!-- Competitions -->
-        <section class="section">
-            <h2 data-i18n="home.competitions.title">Competitions</h2>
-            
-            <div class="publication">
-                <p class="pub-title" data-i18n="home.competitions.mediqa.title">MEDIQA EVAL-2026 Competition (1st Place)</p>
-                <p class="pub-authors" data-i18n="home.competitions.mediqa.tags">NLP • Medical AI • LLM Evaluation</p>
-                <p class="pub-venue" data-i18n="home.competitions.mediqa.dates">Jan 2026 – Feb 2026</p>
-                <ul class="project-highlights">
-                    <li data-i18n="home.competitions.mediqa.point1">Won 1st place out of 42 teams in the MEDIQA EVAL-2026 competition at the ACL Anthology Clinical NLP Workshop (hosted by Microsoft)</li>
-                    <li data-i18n="home.competitions.mediqa.point2">Task: Automatically rate LLM-generated medical responses given patient text and images</li>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.research.mediqa.title">SUAT-BMI at MEDIQA-EVAL 2026: An Ensemble Approach to Language Models as Judges for Automatic Rating of Medical Responses</h3>
+                    <p class="pub-authors"><strong>Xinzhe Peng</strong>, Liyuan E, Kun Feng, Jielin Li, Yuxuan Tang, and Zhao Li (2026)</p>
+                    <p class="pub-venue" data-i18n-html="home.research.mediqa.venue"><cite>Proceedings of the 8th Workshop on Clinical Natural Language Processing (Clinical NLP) @ LREC 2026</cite>, pp. 12–18, Palma, Mallorca, Spain. ELRA Language Resources Association.</p>
+                    <p class="pub-venue" data-i18n="home.mediqa.dates">Jan 2026 – Feb 2026</p>
                     <div class="pub-links">
-                    <a href="https://sites.google.com/view/mediqa2026/mediqa-eval#h.qy4xg1ls7x1b" target="_blank" data-i18n="home.competitions.mediqa.link">[Official Leaderboard Link]</a>
+                        <a href="https://aclanthology.org/2026.clinicalnlp-1.2/" data-i18n-html="home.research.mediqa.link">Paper on ACL Anthology <cite>Clinical NLP Workshop</cite></a>
                     </div>
-                </ul>
-            </div>
-        </section>
+                </div>
 
-        <!-- Skills -->
-        <section class="section">
-            <h2 data-i18n="home.skills.title">Skills</h2>
-            <div class="skills-list">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag" data-i18n="home.skills.statistics">Statistical Analysis</span>
-                <span class="skill-tag">Bash</span>
-                <span class="skill-tag" data-i18n="home.skills.finetuning">finetuning LLMs</span>
-                <span class="skill-tag">fastapi</span>
-            </div>
-        </section>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.research.metafit.title">MetaFit: LLM-Guided Interpretable Decision-Tree Induction for Small-Sample Biomedical Tabular Prediction</h3>
+                    <p class="pub-authors" data-i18n="home.research.metafit.status">Ongoing research · First author</p>
+                    <p class="pub-venue" data-i18n="home.research.projectDates">Jan 2026 – Sep 2026</p>
+                </div>
 
-        <!-- Piano -->
-        <section class="section">
-            <h2 data-i18n="home.piano.title">As a Pianist</h2>
-            <p>
-                🎹 <a href="piano.html" data-i18n="home.piano.link">View my repertoire</a>
-            </p>
-        </section>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.research.soap.title">Guideline-Grounded LLMs for Scalable SOAP Report Generation from Annual Physical Examination Data: A Real-World Hospital Deployment in China</h3>
+                    <p class="pub-authors" data-i18n="home.research.soap.status">Ongoing research</p>
+                    <p class="pub-venue" data-i18n="home.research.projectDates">Jan 2026 – Sep 2026</p>
+                </div>
+            </section>
 
-        <!-- Contact -->
-        <section class="section">
-            <h2 data-i18n="home.contact.title">Contact</h2>
-            <ul class="contact-list">
-                <li>📧 charles2605722943@outlook.com</li>
-                <li data-i18n="home.contact.location">📍 Shenzhen, China</li>
-                <li data-i18n="home.contact.education">🎓 UC Santa Barbara (B.S. Statistics & Data Science)</li>
-            </ul>
-        </section>
+            <section class="section">
+                <h2 data-i18n="home.competitions.title">Competition</h2>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.competitions.mediqa.title">MEDIQA EVAL-2026 Competition (1st Place)</h3>
+                    <p class="pub-authors" data-i18n="home.competitions.mediqa.tags">NLP · Medical AI · LLM Evaluation</p>
+                    <p class="pub-venue" data-i18n="home.mediqa.dates">Jan 2026 – Feb 2026</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.competitions.mediqa.point1">Placed first out of 42 teams in the MEDIQA EVAL-2026 competition at the Clinical NLP Workshop, hosted by Microsoft.</li>
+                        <li data-i18n="home.competitions.mediqa.point2">The task was to automatically rate LLM-generated medical responses given patient text and images.</li>
+                    </ul>
+                    <div class="pub-links">
+                        <a href="https://sites.google.com/view/mediqa2026/mediqa-eval#h.qy4xg1ls7x1b" data-i18n="home.competitions.mediqa.link">Official results</a>
+                    </div>
+                    <div class="pub-links">
+                        <span data-i18n="home.competitions.mediqa.code">Code availability:</span>
+                        <a href="https://github.com/newchat111/MEDIQA-SUATBMI-ENSEMBLE">https://github.com/newchat111/MEDIQA-SUATBMI-ENSEMBLE</a>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2026 Xinzhe Peng</p>
-        </footer>
+            <section class="section">
+                <h2 data-i18n="home.projects.title">Projects</h2>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.projects.ecg.title">ECG Signal Extraction with U-Net</h3>
+                    <p class="pub-authors" data-i18n="home.projects.ecg.tags">Computer Vision · Medical Imaging · Deep Learning</p>
+                    <p class="pub-venue" data-i18n="home.projects.ecg.dates">Nov 2025 – Dec 2025</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.projects.ecg.point1">Preprocessed ECG images via homography transformation and geometric rectification to align coordinate systems across samples</li>
+                        <li data-i18n="home.projects.ecg.point2">Trained a U-Net model for semantic segmentation to accurately extract ECG waveform data</li>
+                        <li data-i18n="home.projects.ecg.point3">Optimized with cross-entropy loss; achieved a final SNR score of 16</li>
+                    </ul>
+                </div>
+
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.projects.parasite.title">Parasite Detection with YOLOv8n &amp; ResNet</h3>
+                    <p class="pub-authors" data-i18n="home.projects.parasite.tags">Object Detection · Computer Vision · Classification</p>
+                    <p class="pub-venue" data-i18n="home.projects.parasite.dates">Nov 2025 – Dec 2025</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.projects.parasite.point1">Developed and trained multiple YOLOv8n models to detect 10+ parasite species and impurities</li>
+                        <li data-i18n="home.projects.parasite.point2">Integrated a ResNet classifier to distinguish true parasites from non-parasitic impurities in the final pipeline</li>
+                        <li data-i18n="home.projects.parasite.point3">Delivered a robust detection system with a test F1-score of 0.87</li>
+                    </ul>
+                </div>
+
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.projects.raman.title">Solution Concentration Prediction via Raman Spectroscopy</h3>
+                    <p class="pub-authors" data-i18n="home.projects.raman.tags">Signal Processing · Deep Learning · Regression</p>
+                    <p class="pub-venue" data-i18n="home.projects.raman.dates">Jun 2025 – Jul 2025</p>
+                    <ul class="project-highlights">
+                        <li data-i18n="home.projects.raman.point1">Preprocessed multi-wavelength Raman spectral data using linear interpolation, max normalization, and Gaussian normalization</li>
+                        <li data-i18n="home.projects.raman.point2">Built a 1D CNN incorporating pooling layers, batch normalization, and dropout for regression</li>
+                        <li data-i18n="home.projects.raman.point3">Enhanced model robustness via hyperparameter tuning and L2 regularization</li>
+                        <li data-i18n="home.projects.raman.point4">Attained an R² score of 0.71 on the test set</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 data-i18n="home.skills.title">Skills</h2>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.skills.coding">Coding</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">scikit-learn</span>
+                    </div>
+                </div>
+                <div class="publication">
+                    <h3 class="pub-title" data-i18n="home.skills.llm">Large language models</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag" data-i18n="home.skills.cpt">Continued pretraining (CPT)</span>
+                        <span class="skill-tag" data-i18n="home.skills.sft">Supervised fine-tuning (SFT)</span>
+                        <span class="skill-tag">LoRA</span>
+                    </div>
+                </div>
+                <div class="publication" id="piano">
+                    <h3 class="pub-title" data-i18n="piano.title">Piano</h3>
+                    <div class="pub-links">
+                        <a href="piano.html" data-i18n="home.piano.link">See repertoire</a>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
