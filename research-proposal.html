@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Proposal | Xinzhe Peng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>Research Proposal</h1>
+            <p class="subtitle"><a href="index.html#bio">Back to Home</a></p>
+        </header>
+        <main>
+            <section class="section">
+                <h2>1. Accurate and interpretable machine learning models based on pretrained transformers</h2>
+                <p>The difficulty of acquiring sufficient samples and the lack of interpretability of machine learning models are common problems in many domains. Inspired by TabPFN and my own work, <cite>Agentic Infusion of Language Model Knowledge into Interpretable Predictive Models for Data-Scarce Learning</cite>, called MetaFit, I would like to develop a framework that extracts knowledge from a pretrained TabPFN into a small and interpretable model. This framework has the same interpretability as MetaFit and hopefully performs equally well as TabPFN.</p>
+            </section>
+            <section class="section">
+                <h2>2. Reliable and efficient benchmarking of biomedical LLMs</h2>
+                <p>Rating automatic responses of biomedical LLMs is a difficult task. Semantic metrics like ROUGE and BERTScore can only capture semantic similarity, ignoring the complexity behind medical contexts. On the other hand, evaluation by human experts is often time-consuming and expensive. To address this issue, recent works have used LLM-as-a-judge as an alternative to human experts for large-scale evaluation [cite the benchmarks and papers]. However, the reliability of the metrics and the faithfulness of the judge LLM are underexplored. Inspired by my recent workshop paper in MEDIQA-EVAL, I would like to develop a reliable and efficient benchmarking framework of biomedical LLMs by training a judge LLM whose predictions highly correlates with expert preference. This can be done by fine-tuning GPTs or Jev-like decision models. The first difficulty would be finding expert annotators to create a dataset that has LLM-generated responses with their corresponding scores, which is what I am currently working on.</p>
+            </section>
+            <section class="section">
+                <h2>3. Developing evidence-based biomedical LLMs</h2>
+                <p>Clinicians often search for evidence in clinical guidelines and textbooks when giving diagnosis or treatments to ensure that their decisions are supported. However, this is not the case for current LLMs in clinical applications, where their responses usually don’t contain references to the evidence. This can be problematic because LLMs are uninterpretable and directly giving their generated contents to the patients can be risky. RAG gives a potential solution to this problem by appending relevant corpus to each generation. However, this approach has problems such as inefficient generation and low retrieval accuracy when the total number of indexed documents is large.</p>
+                <p>I would like to continue my work on developing evidence-based biomedical LLMs whose responses always contain references to existing documents such that clinicians can look up and validate.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

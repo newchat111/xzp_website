@@ -8,20 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="page">
+    <div class="page page-with-section-menu">
         <header class="header">
             <h1 data-i18n="home.name">Xinzhe Peng</h1>
         </header>
 
+        <img class="portrait" src="images/personal_portrait.png" width="4032" height="3024" alt="Xinzhe Peng outdoors at sunset">
+
+        <nav class="section-menu" aria-label="Page sections">
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#personal-information">Personal Information</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#competition">Competition</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+
         <main>
-            <section class="section">
+            <section class="section" id="bio">
                 <h2 data-i18n="home.bio.title">Bio</h2>
                 <p data-i18n="home.bio.intro">I received my bachelor’s degree in Statistics and Data Science from UC Santa Barbara in 2025. My research interests are in biomedical LLMs and interpretable machine learning in small-data regimes.</p>
                 <p data-i18n="home.bio.current">My recent work in biomedical LLMs is about automatic ratings with LLM-as-a-judge, studying the correlation between human expert ratings and LLM ratings. For interpretable machine learning, I am working on transferring the knowledge of LLMs to decision trees with self-optimization, and the manuscript is ready to be submitted.</p>
                 <p data-i18n="home.bio.future">In the future, I am planning to work on the training and the benchmarking of biomedical LLMs and also on further studying how LLMs can modify the weights of small models by transferring their prior knowledge.</p>
+                <p>Please see my <a href="research-proposal.html">Research Proposal</a> for more details.</p>
             </section>
 
-            <section class="section">
+            <section class="section" id="personal-information">
                 <h2 data-i18n="home.personal.title">Personal Information</h2>
                 <ul class="contact-list">
                     <li data-i18n="home.personal.education">Bachelor of Science, University of California, Santa Barbara (2022–2025)</li>
@@ -32,7 +47,7 @@
                 </ul>
             </section>
 
-            <section class="section">
+            <section class="section" id="experience">
                 <h2 data-i18n="home.experience.title">Experience</h2>
                 <h3 class="pub-title" data-i18n="home.experience.role">Research Assistant · Shenzhen University of Advanced Technology</h3>
                 <p class="pub-venue" data-i18n="home.experience.dates">Nov 2025 – Present</p>
@@ -48,24 +63,14 @@
                         <li data-i18n="home.experience.report.point4">The system serves more than 10,000 patients.</li>
                     </ul>
                 </div>
-
-                <div class="publication">
-                    <h4 class="pub-title">VitaLLM</h4>
-                    <p class="pub-authors" data-i18n="home.experience.vitallm.details">HuggingFace</p>
-                    <p class="pub-venue" data-i18n="home.experience.projectDates">Nov 2025 – Sep 2026</p>
-                    <ul class="project-highlights">
-                        <li data-i18n="home.experience.vitallm.point1">Developed a training recipe for LLMs for automated SOAP generation, including continued pretraining (CPT), data augmentation, and supervised fine-tuning (SFT).</li>
-                        <li data-i18n="home.experience.vitallm.point2">Developed an LLM-as-a-judge benchmark for automated evaluation of SOAP generation, with metrics including factual accuracy, consistency, and writing style.</li>
-                    </ul>
-                </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="research">
                 <h2 data-i18n="home.research.title">Research</h2>
                 <p data-i18n="home.research.interests">Research interests include biomedical LLMs, evaluation of biomedical LLMs, and small-sample machine learning.</p>
 
                 <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.research.mediqa.title">SUAT-BMI at MEDIQA-EVAL 2026: An Ensemble Approach to Language Models as Judges for Automatic Rating of Medical Responses</h3>
+                    <h3 class="pub-title" data-i18n="home.research.mediqa.title">SUAT-BMI at MEDIQA-EVAL 2026: An Ensemble Approach to Language Models as Judges for Automatic Rating of Medical Responses (First author)</h3>
                     <p class="pub-authors"><strong>Xinzhe Peng</strong>, Liyuan E, Kun Feng, Jielin Li, Yuxuan Tang, and Zhao Li (2026)</p>
                     <p class="pub-venue" data-i18n-html="home.research.mediqa.venue"><cite>Proceedings of the 8th Workshop on Clinical Natural Language Processing (Clinical NLP) @ LREC 2026</cite>, pp. 12–18, Palma, Mallorca, Spain. ELRA Language Resources Association.</p>
                     <p class="pub-venue" data-i18n="home.mediqa.dates">Jan 2026 – Feb 2026</p>
@@ -75,7 +80,8 @@
                 </div>
 
                 <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.research.metafit.title">MetaFit: LLM-Guided Interpretable Decision-Tree Induction for Small-Sample Biomedical Tabular Prediction</h3>
+                    <h3 class="pub-title" data-i18n="home.research.metafit.title">Agentic Infusion of Language Model Knowledge into Interpretable Predictive Models for Data-Scarce Learning (First author)</h3>
+                    <img class="pub-figure" src="images/fig1a.png" width="7887" height="2190" loading="lazy" alt="MetaFit workflow showing how an LLM proposes decision trees, how thresholds are optimized and trees evaluated, and how misclassified samples are fed back into the prompt.">
                     <p class="pub-authors" data-i18n="home.research.metafit.status">Ongoing research · First author</p>
                     <p class="pub-venue" data-i18n="home.research.projectDates">Jan 2026 – Sep 2026</p>
                 </div>
@@ -87,7 +93,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="competition">
                 <h2 data-i18n="home.competitions.title">Competition</h2>
                 <div class="publication">
                     <h3 class="pub-title" data-i18n="home.competitions.mediqa.title">MEDIQA EVAL-2026 Competition (1st Place)</h3>
@@ -107,66 +113,42 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="projects">
                 <h2 data-i18n="home.projects.title">Projects</h2>
                 <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.projects.ecg.title">ECG Signal Extraction with U-Net</h3>
-                    <p class="pub-authors" data-i18n="home.projects.ecg.tags">Computer Vision · Medical Imaging · Deep Learning</p>
-                    <p class="pub-venue" data-i18n="home.projects.ecg.dates">Nov 2025 – Dec 2025</p>
-                    <ul class="project-highlights">
-                        <li data-i18n="home.projects.ecg.point1">Preprocessed ECG images via homography transformation and geometric rectification to align coordinate systems across samples</li>
-                        <li data-i18n="home.projects.ecg.point2">Trained a U-Net model for semantic segmentation to accurately extract ECG waveform data</li>
-                        <li data-i18n="home.projects.ecg.point3">Optimized with cross-entropy loss; achieved a final SNR score of 16</li>
-                    </ul>
+                    <h3 class="pub-title">metafit</h3>
+                    <p>An open-source Python package that implements the idea in my paper <cite>Agentic Infusion of Language Model Knowledge into Interpretable Predictive Models for Data-Scarce Learning</cite>.</p>
+                    <div class="pub-links">
+                        <a href="https://pypi.org/project/metafit/">PyPI</a> ·
+                        <a href="https://github.com/newchat111/MetaFit-An-Interpretable-Classification-Framework-Under-Small-Sample-Regimes">Official GitHub repository</a>
+                    </div>
                 </div>
 
                 <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.projects.parasite.title">Parasite Detection with YOLOv8n &amp; ResNet</h3>
-                    <p class="pub-authors" data-i18n="home.projects.parasite.tags">Object Detection · Computer Vision · Classification</p>
-                    <p class="pub-venue" data-i18n="home.projects.parasite.dates">Nov 2025 – Dec 2025</p>
+                    <h3 class="pub-title">VitaLLM</h3>
+                    <p class="pub-authors" data-i18n="home.experience.vitallm.details">HuggingFace</p>
+                    <p class="pub-venue" data-i18n="home.experience.projectDates">Nov 2025 – Sep 2026</p>
                     <ul class="project-highlights">
-                        <li data-i18n="home.projects.parasite.point1">Developed and trained multiple YOLOv8n models to detect 10+ parasite species and impurities</li>
-                        <li data-i18n="home.projects.parasite.point2">Integrated a ResNet classifier to distinguish true parasites from non-parasitic impurities in the final pipeline</li>
-                        <li data-i18n="home.projects.parasite.point3">Delivered a robust detection system with a test F1-score of 0.87</li>
-                    </ul>
-                </div>
-
-                <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.projects.raman.title">Solution Concentration Prediction via Raman Spectroscopy</h3>
-                    <p class="pub-authors" data-i18n="home.projects.raman.tags">Signal Processing · Deep Learning · Regression</p>
-                    <p class="pub-venue" data-i18n="home.projects.raman.dates">Jun 2025 – Jul 2025</p>
-                    <ul class="project-highlights">
-                        <li data-i18n="home.projects.raman.point1">Preprocessed multi-wavelength Raman spectral data using linear interpolation, max normalization, and Gaussian normalization</li>
-                        <li data-i18n="home.projects.raman.point2">Built a 1D CNN incorporating pooling layers, batch normalization, and dropout for regression</li>
-                        <li data-i18n="home.projects.raman.point3">Enhanced model robustness via hyperparameter tuning and L2 regularization</li>
-                        <li data-i18n="home.projects.raman.point4">Attained an R² score of 0.71 on the test set</li>
+                        <li data-i18n="home.experience.vitallm.point1">Developed a training recipe for LLMs for automated SOAP generation, including continued pretraining (CPT), data augmentation, and supervised fine-tuning (SFT).</li>
+                        <li data-i18n="home.experience.vitallm.point2">Developed an LLM-as-a-judge benchmark for automated evaluation of SOAP generation, with metrics including factual accuracy, consistency, and writing style.</li>
                     </ul>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="skills">
                 <h2 data-i18n="home.skills.title">Skills</h2>
                 <div class="publication">
                     <h3 class="pub-title" data-i18n="home.skills.coding">Coding</h3>
                     <div class="skills-list">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Hugging Face</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">scikit-learn</span>
-                    </div>
-                </div>
-                <div class="publication">
-                    <h3 class="pub-title" data-i18n="home.skills.llm">Large language models</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag" data-i18n="home.skills.cpt">Continued pretraining (CPT)</span>
-                        <span class="skill-tag" data-i18n="home.skills.sft">Supervised fine-tuning (SFT)</span>
-                        <span class="skill-tag">LoRA</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Git</span>
                     </div>
                 </div>
                 <div class="publication" id="piano">
                     <h3 class="pub-title" data-i18n="piano.title">Piano</h3>
+                    <p>I am currently working on my LTCL performance diploma.</p>
                     <div class="pub-links">
                         <a href="piano.html" data-i18n="home.piano.link">See repertoire</a>
                     </div>
